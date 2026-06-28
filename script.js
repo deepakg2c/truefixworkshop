@@ -284,3 +284,19 @@ document.querySelectorAll('.brand-item').forEach(item => {
         this.style.boxShadow = '';
     });
 });
+
+// ===== FLOATING CALL BUTTON - DIRECT CALL =====
+document.querySelector('.call-float')?.addEventListener('click', function (e) {
+    // Phone number already in href="tel:+918755106417"
+    // This just ensures it works and shows a toast
+    const phone = '+918755106417';
+    showToast('📞 Calling TrueFix Workshop...', 'success');
+
+    // Optional: Google Analytics event tracking
+    if (typeof gtag !== 'undefined') {
+        gtag('event', 'click', {
+            'event_category': 'Phone Call',
+            'event_label': 'Floating Call Button'
+        });
+    }
+});
