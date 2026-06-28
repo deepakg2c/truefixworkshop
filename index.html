@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TrueFix Workshop - Multi-Brand Car Service</title>
+
+    <!-- SEO Meta Tags -->
+    <meta name="description"
+        content="TrueFix Workshop - Multi-brand car service center in Bijnor. Cashless facility, insurance claims, repair & maintenance.">
+    <meta name="keywords" content="car service, multi-brand workshop, cashless claims, car repair, TrueFix, Bijnor">
+    <link rel="canonical" href="https://truefixworkshop.in/">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!-- ===== HEADER ===== -->
+    <header>
+        <div class="container header-flex">
+            <div class="logo">
+                <img src="images/logo.jpeg" alt="TrueFix Workshop Logo" onerror="this.style.display='none'">
+                <h1>True<span>Fix</span></h1>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#home" class="active"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#services"><i class="fas fa-wrench"></i> Services</a></li>
+                    <li><a href="#claims"><i class="fas fa-file-invoice"></i> Claims</a></li>
+                    <li><a href="#about"><i class="fas fa-info-circle"></i> About</a></li>
+                    <li><a href="#contact"><i class="fas fa-phone"></i> Contact</a></li>
+                </ul>
+            </nav>
+            <div class="hamburger" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+    </header>
+
+    <!-- ===== SLIDER / HERO ===== -->
+    <!-- ===== IMPROVED SLIDER / HERO ===== -->
+<section id="home" class="hero">
+    <div class="slider-container">
+        <div class="slider">
+            <!-- Slide 1 -->
+            <div class="slide active" style="background-image: url('images/slider1.jpeg');">
+                <div class="slide-overlay"></div>
+                <div class="slide-content left-align">
+                    <span class="slide-tag">Welcome to TrueFix</span>
+                    <h2>Multi-Brand Car <span>Service</span></h2>
+                    <p>Repair • Service • Maintenance</p>
+                    <div class="slide-badges">
+                        <span class="badge">Cashless Facility</span>
+                        <span class="badge">Insurance Claims</span>
+                    </div>
+                    <a href="#claims" class="btn">Claim Assistance →</a>
+                </div>
+                <div class="slide-image">
+                    <img src="images/slider1.jpeg" alt="Car Service" onerror="this.style.display='none'">
+                </div>
+            </div>
+            
+            <!-- Slide 2 -->
+            <div class="slide" style="background-image: url('images/slider2.jpeg');">
+                <div class="slide-overlay"></div>
+                <div class="slide-content left-align">
+                    <span class="slide-tag">Claims Made Easy</span>
+                    <h2>All Types of <span>Claims</span></h2>
+                    <p>Insurance • Company • Cashless</p>
+                    <div class="slide-badges">
+                        <span class="badge">100% Support</span>
+                        <span class="badge">Fast Processing</span>
+                    </div>
+                    <a href="#claims" class="btn">Learn More →</a>
+                </div>
+                <div class="slide-image">
+                    <img src="images/slider2.jpeg" alt="Insurance Claims" onerror="this.style.display='none'">
+                </div>
+            </div>
+            
+            <!-- Slide 3 -->
+            <div class="slide" style="background-image: url('images/slider3.jpeg');">
+                <div class="slide-overlay"></div>
+                <div class="slide-content left-align">
+                    <span class="slide-tag">Trusted Since 2020</span>
+                    <h2>Bijnor's Premier <span>Workshop</span></h2>
+                    <p>10+ Brands • Expert Technicians</p>
+                    <div class="slide-badges">
+                        <span class="badge">⭐ 4.9 Rating</span>
+                        <span class="badge">1000+ Happy Customers</span>
+                    </div>
+                    <a href="#about" class="btn">About Us →</a>
+                </div>
+                <div class="slide-image">
+                    <img src="images/slider3.jpeg" alt="TrueFix Workshop" onerror="this.style.display='none'">
+                </div>
+            </div>
+        </div>
+        
+        <!-- Slider Controls -->
+        <button class="slider-btn prev" onclick="changeSlide(-1)">❮</button>
+        <button class="slider-btn next" onclick="changeSlide(1)">❯</button>
+        <div class="slider-dots">
+            <span class="dot active" onclick="goToSlide(0)"></span>
+            <span class="dot" onclick="goToSlide(1)"></span>
+            <span class="dot" onclick="goToSlide(2)"></span>
+        </div>
+    </div>
+</section>
+
+    <!-- ===== BRANDS BAR ===== -->
+    <section class="brands-bar">
+        <div class="container">
+            <h3>Brands We Service</h3>
+            <div class="brand-logos">
+                <span><img src="brand-logo/tata-logo.png" alt="TATA" onerror="this.style.display='none'"> TATA</span>
+                <span><img src="brand-logo/hyundai-logo.png" alt="Hyundai" onerror="this.style.display='none'">
+                    Hyundai</span>
+                <span><i class="fas fa-car"></i> Honda</span>
+                <span><i class="fas fa-car"></i> Suzuki</span>
+                <span><i class="fas fa-car"></i> Mahindra</span>
+                <span><i class="fas fa-car"></i> Toyota</span>
+                <span><i class="fas fa-car"></i> Subaru</span>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== SERVICES ===== -->
+    <section id="services" class="section">
+        <div class="container">
+            <h2 class="section-title">Our <span>Services</span></h2>
+            <p class="section-sub">Comprehensive car care with cashless claim support</p>
+
+            <div class="card-grid">
+                <div class="card">
+                    <i class="fas fa-oil-can"></i>
+                    <h3>General Service</h3>
+                    <p>Oil change, filter replacement, engine tuning & full inspection</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-paint-brush"></i>
+                    <h3>Denting & Painting</h3>
+                    <p>Scratch removal, dent repair, color matching with warranty</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-car-crash"></i>
+                    <h3>Accident Repair</h3>
+                    <p>Full body repair, chassis straightening & claim support</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-battery-three-quarters"></i>
+                    <h3>Electrical & AC</h3>
+                    <p>Battery, wiring, AC service & diagnostics</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-tire"></i>
+                    <h3>Wheel & Tyres</h3>
+                    <p>Alignment, balancing, tyre replacement & rim repair</p>
+                </div>
+                <div class="card">
+                    <i class="fas fa-clipboard-check"></i>
+                    <h3>Insurance Claims</h3>
+                    <p>Complete assistance for cashless & reimbursement claims</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CLAIMS ===== -->
+    <section id="claims" class="section claims-section">
+        <div class="container">
+            <h2 class="section-title">Claims & <span>Cashless</span></h2>
+            <p class="section-sub">All types of claims handled with expertise</p>
+
+            <div class="claim-grid">
+                <div class="claim-card">
+                    <i class="fas fa-shield-alt"></i>
+                    <h3>Cashless Facility</h3>
+                    <p>All major insurance companies — no upfront payment</p>
+                    <span class="tag">Available</span>
+                </div>
+                <div class="claim-card">
+                    <i class="fas fa-motorcycle"></i>
+                    <h3>Own Damage Claim</h3>
+                    <p>Quick processing with minimal documentation</p>
+                    <span class="tag">Cashless</span>
+                </div>
+                <div class="claim-card">
+                    <i class="fas fa-users"></i>
+                    <h3>Third-Party Claim</h3>
+                    <p>Full assistance for third-party insurance claims</p>
+                    <span class="tag">Support</span>
+                </div>
+                <div class="claim-card">
+                    <i class="fas fa-building"></i>
+                    <h3>Company Claim</h3>
+                    <p>Corporate & fleet vehicle claim management</p>
+                    <span class="tag">Priority</span>
+                </div>
+            </div>
+
+            <div class="insurance-partners">
+                <h4>Insurance Partners</h4>
+                <div class="partner-grid">
+                    <span>Bajaj Allianz</span>
+                    <span>ICICI Lombard</span>
+                    <span>HDFC Ergo</span>
+                    <span>Tata AIG</span>
+                    <span>Reliance</span>
+                    <span>SBI General</span>
+                    <span>New India</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== ABOUT ===== -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2 class="section-title">About <span>TrueFix</span></h2>
+            <div class="about-grid">
+                <div class="about-text">
+                    <h3>Bijnor's Trusted Multi-Brand Workshop</h3>
+                    <p><strong>TrueFix Workshop</strong> is a premier multi-brand car service center in Bijnor, Uttar
+                        Pradesh. We specialize in repair, service, and maintenance for all car brands.</p>
+                    <p>With <strong>cashless facility</strong> and expertise in all types of insurance claims, we make
+                        car care hassle-free for our customers.</p>
+                    <ul>
+                        <li><i class="fas fa-check-circle"></i> 10+ Brands Serviced</li>
+                        <li><i class="fas fa-check-circle"></i> Cashless Claims Facility</li>
+                        <li><i class="fas fa-check-circle"></i> Expert Technicians</li>
+                        <li><i class="fas fa-check-circle"></i> OEM Quality Parts</li>
+                    </ul>
+                    <div class="about-info">
+                        <p><i class="fas fa-phone"></i> +91 8755106417</p>
+                        <p><i class="fas fa-map-marker-alt"></i> Bijnor, Uttar Pradesh 246701</p>
+                        <p><i class="fas fa-id-card"></i> GST: 09QRQPS5049E1ZT</p>
+                    </div>
+                </div>
+                <div class="about-image">
+                    <img src="images/header.jpeg" alt="TrueFix Workshop" onerror="this.style.display='none'">
+                    <div class="about-placeholder">
+                        <i class="fas fa-tools"></i>
+                        <p>TrueFix Workshop</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== CONTACT ===== -->
+    <section id="contact" class="section contact-section">
+        <div class="container">
+            <h2 class="section-title">Get In <span>Touch</span></h2>
+            <div class="contact-grid">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Address</h4>
+                            <p>TrueFix Workshop, Bijnor, Uttar Pradesh 246701</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-phone"></i>
+                        <div>
+                            <h4>Phone</h4>
+                            <p>+91 8755106417</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p>info@truefixworkshop.in</p>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <i class="fas fa-clock"></i>
+                        <div>
+                            <h4>Working Hours</h4>
+                            <p>Mon-Sat: 9:00 AM - 8:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="contact-form">
+                    <form id="contactForm">
+                        <input type="text" placeholder="Your Name" required>
+                        <input type="email" placeholder="Your Email" required>
+                        <input type="tel" placeholder="Phone Number">
+                        <select required>
+                            <option value="">Service Needed</option>
+                            <option>General Service</option>
+                            <option>Denting & Painting</option>
+                            <option>Accident Repair</option>
+                            <option>Claim Assistance</option>
+                            <option>Other</option>
+                        </select>
+                        <textarea placeholder="Your Message" rows="4"></textarea>
+                        <button type="submit" class="btn">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== FOOTER ===== -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-brand">
+                    <h2>True<span>Fix</span></h2>
+                    <p>Multi-Brand Car Service Center<br>Repair • Service • Maintenance</p>
+                    <p class="gst">GST: 09QRQPS5049E1ZT</p>
+                </div>
+                <div class="footer-links">
+                    <h4>Quick Links</h4>
+                    <a href="#home">Home</a>
+                    <a href="#services">Services</a>
+                    <a href="#claims">Claims</a>
+                    <a href="#about">About</a>
+                    <a href="#contact">Contact</a>
+                </div>
+                <div class="footer-contact">
+                    <h4>Contact</h4>
+                    <p><i class="fas fa-phone"></i> +91 8755106417</p>
+                    <p><i class="fas fa-map-marker-alt"></i> Bijnor, UP 246701</p>
+                    <p><i class="fas fa-envelope"></i> info@truefixworkshop.in</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>© 2026 TrueFix Workshop. All Rights Reserved.</p>
+                <p>Designed with <i class="fas fa-heart" style="color:#f5c518;"></i> for TrueFix</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- ===== JAVASCRIPT ===== -->
+    <script src="script.js"></script>
+</body>
+
+</html>
